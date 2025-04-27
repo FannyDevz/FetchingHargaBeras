@@ -1,0 +1,21 @@
+{
+  "name": "ricescrapping",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+    "fetch": "node fetch_data.js",
+    "harian": "node data_harian.js",
+    "bulanan": "node data_bulanan.js",
+    "kota_bulanan": "node data_kota_bulanan.js",
+    "all": "npm run fetch && npm run harian && npm run bulanan && npm run kota_bulanan"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0"
+  }
+}
