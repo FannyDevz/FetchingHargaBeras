@@ -3,8 +3,9 @@ const mysql = require('mysql2/promise');
 const db = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: '',
-  database: 'beras',
+  password: 'root',
+  database: 'beras', // Ganti nama database kalau beda
+  port : 8889,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0

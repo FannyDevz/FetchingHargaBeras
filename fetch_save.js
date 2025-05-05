@@ -5,8 +5,9 @@ const axios = require('axios');
 const db = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: 'root',
   database: 'beras', // Ganti nama database kalau beda
+  port : 8889,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -75,7 +76,7 @@ function generateDates(start, end) {
   
   // Fungsi utama
   async function fetchAndSaveAll() {
-    const startDate = new Date('2025-04-26');
+    const startDate = new Date('2020-01-01');
     const endDate = new Date();
     const allDates = generateDates(startDate, endDate);
   
