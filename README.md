@@ -28,21 +28,22 @@ Pastikan kamu sudah menginstal:
    node create_table.js
    -> Script ini akan membuat tabel yang dibutuhkan di database.
 
-2️⃣ Mengambil dan menyimpan data harian
+2️⃣ Menjalankan pengambilan dan penyimpanan data otomatis
+   node fetch_save.js
+   -> Menjalankan proses pengambilan dan penyimpanan data secara otomatis.
+
+3️⃣  Mengambil dan menyimpan data harian
    node data_harian.js
    -> Mengambil data harian dan menyimpannya ke tabel.
 
-3️⃣ Mengambil dan menyimpan data bulanan
+4️⃣ Mengambil dan menyimpan data bulanan
    node data_bulanan.js
    -> Mengambil data bulanan dan memperbarui tabel.
 
-4️⃣ Mengambil dan menyimpan data kota bulanan
+5️⃣  Mengambil dan menyimpan data kota bulanan
    node data_kota_bulanan.js
    -> Mengambil data berdasarkan kota per bulan dan menyimpannya ke database.
 
-5️⃣ Menjalankan pengambilan dan penyimpanan data otomatis
-   node fetch_save.js
-   -> Menjalankan proses pengambilan dan penyimpanan data secara otomatis.
 
 🧩 Catatan Tambahan
 - Pastikan konfigurasi database atau API key sudah benar.
@@ -50,7 +51,7 @@ Pastikan kamu sudah menginstal:
 
 🧠 Tips Penggunaan
 Untuk menjalankan semua script berurutan:
-   node create_table.js && node data_harian.js && node data_bulanan.js && node data_kota_bulanan.js && node fetch_save.js
+   node create_table.js && node fetch_save.js && node data_harian.js && node data_bulanan.js && node data_kota_bulanan.js
 
 📄 Lisensi
 Script ini dibuat oleh FannyDevz dan dilisensikan bebas untuk penggunaan pribadi dan pembelajaran.
